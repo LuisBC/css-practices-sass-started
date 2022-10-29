@@ -1,0 +1,25 @@
+@use 'partial';
+
+body {
+  font: 100% partial.$font-stack;
+  color: partial.$primary-color;
+}
+
+.message {
+  @extend %message-shared;
+}
+
+.success {
+  @extend %message-shared;
+  border-color: green;
+}
+
+.error {
+  @extend %message-shared;
+  border-color: red;
+}
+
+.warning {
+  @extend %message-shared;
+  border-color: yellow;
+}
